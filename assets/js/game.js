@@ -69,8 +69,10 @@ var fight = function(enemyName) {
             playerMoney = playerMoney - 10;
             console.log("playerMoney", playerMoney)
             break;
+       
+        } else {
+            fight();
         }
-        
     // if player did not choose FIGHT or SKIP in prompt
     } else {
         window.alert("You need to choose a valid option. Try again!");
